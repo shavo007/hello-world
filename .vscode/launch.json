@@ -1,0 +1,18 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "podSelector": {
+                "app": "node-hello-world"
+            },
+            "type": "cloudcode",
+            "language": "Node",
+            "request": "attach",
+            "debugPort": 9229,
+            "localRoot": "${workspaceFolder}",
+            "remoteRoot": "/hello-world",
+            "name": "Debug on Kubernetes",
+
+        }
+    ]
+}
