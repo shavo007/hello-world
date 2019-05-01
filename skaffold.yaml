@@ -1,11 +1,11 @@
-apiVersion: skaffold/v1beta6
+apiVersion: skaffold/v1beta9
 kind: Config
 build:
+  artifacts:
+  - image: gcr.io/cloud-build-1/helloworld
+    context: .
   tagPolicy:
     sha256: {}
-  artifacts:
-  - context: .
-    image: node-hello-world
 deploy:
   kubectl:
     manifests:
@@ -13,4 +13,5 @@ deploy:
 profiles:
 - name: cloudbuild
   build:
-    googleCloudBuild: {}
+    googleCloudBuild:
+      projectId: cloud-build-1

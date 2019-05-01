@@ -1,5 +1,9 @@
 {
+  
+  "cloudcode.image-registry": {
+    "name": "gcr.io/cloud-build-1"
+  },
   "cloudcode.profile-cluster-map": {
-    "cloudbuild": "docker-desktop"
+    "cloudbuild": "gke_cloud-build-1_us-central1-a_shane-gke"
   }
 }
